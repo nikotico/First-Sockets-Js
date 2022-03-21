@@ -4,6 +4,4 @@ It's my first project of Socket.io in JavaScript + Node Js
 Is a chat in real time, only for localhost
 
 
-![chat](https://imgur.com/a/8FdwjA6.png)
-
-![img](https://i.imgur.com/izQnex7.png)
+![chat](https://user-images.githubusercontent.com/52984591/159192823-f9f488ab-9a79-4194-baea-231572800600.png)
