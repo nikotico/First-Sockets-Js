@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <title>Chat con Socket</title>
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+
+        <style>
+            body{
+                background-color:black;
+                color: white;
+            }
+            #msgs{
+                width: 95%;
+                max-width: 400px;
+                height: 350px;
+                overflow-y: scroll;
+                border: 1px solid #eee;
+                box-shadow: 0px 0px 20px rgb(255, 255, 255) inset;
+            }
+            .msg{
+                margin: 20px;
+                padding: auto;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                background: white;
+                color: black;
+            }
+
+            #consult{
+                margin-top: 30px;
+            }
+            
+            #consult .text{
+                padding: 10px;
+                width: 400px;
+                float: left;
+                height: 60px;
+            }
+            #consult .btn{
+                padding: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Hola Chat </h1>
+        <div id="msgs"></div>
+        
+        <form onsubmit="return addMsg(this)" id="consult" >
+
+            <input type="text" id="nickname" placeholder="Nick" class="text"/>
+            <textarea id="text" placeholder="Mensaje..." class="text"></textarea>
+            <input class="btn" type="submit" value="Enviar"/>
+        </form>
+    </body>
+</html>
